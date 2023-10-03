@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kayhla's Library</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="script.js" defer></script>
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>My Library</h1>
+
+    <!-- Container to display books -->
+    <table id="library-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Status</th>
+          <th>Action</th>
+          <!-- Added a new header for the action column -->
+        </tr>
+      </thead>
+      <tbody id="library-body"></tbody>
+    </table>
+
+    <!-- Button to open the new book form -->
+    <button id="new-book-button">NEW BOOK</button>
+
+    <!-- Form to input book details (hidden initially) -->
+    <div id="new-book-form">
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required /><br />
+        <label for="author">Author:</label>
+        <input type="text" id="author" required /><br />
+        <!-- Add more input fields for additional book details -->
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
