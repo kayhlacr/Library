@@ -44,7 +44,7 @@ function displayBooks() {
     row.innerHTML = `
       <td>${book.title}</td>
       <td>${book.author}</td>
-      <td>${book.read ? "Read" : "Not Read"}</td>
+      <td>${book.read ? "Read &#10003;" : "Not Read"}</td>
       <td>
         <button onclick="removeBook(${index})">Remove</button>
         <button onclick="toggleReadStatus(${index})">Read</button>
