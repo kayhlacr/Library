@@ -3,6 +3,20 @@ const myLibrary = [];
 
 // Function to add a book to the library
 function addBookToLibrary(title, author) {
+  const lowerCaseTitle = title.toLowerCase();
+  const lowerCaseAuthor = author.toLowerCase();
+
+  if (
+    myLibrary.some(
+      (book) =>
+        book.title.toLowerCase() === lowerCaseTitle &&
+        book.author.toLowerCase() === lowerCaseAuthor
+    )
+  ) {
+    alert("This book already exists in the library.");
+    return;
+  }
+
   // Create a new Book object
   const newBook = {
     title: title,
