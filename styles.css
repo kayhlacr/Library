@@ -2,13 +2,11 @@ body {
   background-color: ivory;
 }
 
-/* Center the heading and change its color to white */
 h1 {
   text-align: center;
   color: black;
 }
 
-/* Style the library table */
 #library-table {
   margin: 20px auto;
   width: 80%;
@@ -19,7 +17,6 @@ h1 {
   table-layout: fixed;
 }
 
-/* Style the table header */
 #library-table th {
   background-color: beige;
   color: black;
@@ -28,14 +25,12 @@ h1 {
   text-align: left;
 }
 
-/* Style the table cells */
 #library-table td {
   padding: 10px;
   border-bottom: 2px solid black;
   text-align: left;
 }
 
-/* Style the "NEW BOOK" button */
 #new-book-button {
   display: block;
   margin: 20px auto;
@@ -46,7 +41,6 @@ h1 {
   cursor: pointer;
 }
 
-/* Style the new book form */
 #new-book-form {
   background-color: tan;
   padding: 20px;
@@ -56,7 +50,6 @@ h1 {
   text-align: center;
 }
 
-/* Style form elements */
 #book-form label {
   display: block;
   margin-bottom: 5px;
